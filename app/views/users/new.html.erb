@@ -10,8 +10,8 @@
     <%= form.text_field "email" %>
   </p>
   <p>
-    <%= form.label "password" %>
-    <%= form.text_field "password" %>
+    <%= form.label "password", class: "form-label" %>
+    <%= form.password_field "password", class: "form-control" %>
   </p>
   <p>
     <%= form.submit "Sign up", class: "btn btn-primary" %>
