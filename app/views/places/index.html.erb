@@ -1,16 +1,16 @@
-<h1>Here's a list of <% @current_user %>'s Places</h1>
+<h1>Here's a list of places I have been </h1>
+
+<p>
 
 <div>
     <a href="/places/new/" class="btn btn-success">Add New Place</a> 
 </div>
-
+<p>
+<p>
+<p>
 
 <ul>
  <% for place in @places %>
    <li><a href="/places/<%= place.id %>"><%= place.name %></a></li>
  <% end %>
 </ul>
-
-<p>
-  <a href="/places/new">New place</a>
-</p>
